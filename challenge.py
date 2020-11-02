@@ -1,11 +1,9 @@
-print("Today's date?")
-date = input()
-print("Breakfast calories?")
-breakfast = int(input())
-print("Lunch calories?")
-lunch = int(input())
-print("Dinner calories?")
-dinner = int(input())
-print("Snack calories?")
-snack = int(input())
-print("Calorie content for " + date + ": " + str(breakfast + lunch + dinner + snack))
+answer = input('Would you like to continue?')
+
+if answer == 'n' or answer == 'no':
+    print('Exiting')
+elif answer == 'y' or answer == 'yes':
+    print('Continuing...')
+    print('Complete!')
+else:
+    print('Please, try again and respond with yes or no.')
